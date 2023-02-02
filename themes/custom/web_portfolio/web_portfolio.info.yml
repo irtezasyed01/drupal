@@ -1,0 +1,35 @@
+type: theme
+base theme: false
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+name: 'Web Developer Portfolio'
+description: 'A Drupal sub-theme for Web Developer Portfolio.'
+
+regions:
+  main_navigation_left: 'Main Navigation Left'  
+  main_navigation_right: 'Main Navigation right'
+  topbar: 'Top Bar'
+  main_slider: 'Main Slider'
+  login_form: 'Login Form'
+  help: 'Help'
+  content: 'Content'
+  intro: 'Introduction'
+  personal_info: 'Personal Information'
+  expertise: 'My Expertise'
+  experience: 'Experience'
+  education: 'Education'
+  skills: 'Skills'
+  languages: 'Languages'
+  services: 'My Services'
+  portfolio: 'My Portfolio'
+  blog: 'Blog Posts'
+  contact_us: 'Contact Us'
+  get_in_touch: 'Get in Touch'
+  footer: 'Footer'
+  copyrights: 'Copy Rights'
+  page_top: 'Page top'
+  page_bottom : 'Page bottom'
+
+libraries:
+  - 'web_portfolio/global-styling'

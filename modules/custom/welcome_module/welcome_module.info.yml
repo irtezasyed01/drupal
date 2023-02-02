@@ -1,0 +1,6 @@
+name: Welcome Module
+type: module
+description: 'My First Custom Module in Drupal 9'
+version: 1.0
+package: Custom
+core_version_requirement: ^8 || ^9

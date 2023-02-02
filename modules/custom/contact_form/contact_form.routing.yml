@@ -1,0 +1,7 @@
+contact_form.contact:
+  path: '/send_message'
+  defaults:
+    _controller: '\Drupal\contact_form\Controller\ContactFormController::sendMessage'
+    _title: 'Send a Message'
+  requirements:
+    _permission: 'access content'

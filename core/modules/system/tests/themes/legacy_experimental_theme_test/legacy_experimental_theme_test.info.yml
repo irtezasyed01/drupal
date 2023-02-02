@@ -1,0 +1,11 @@
+name: 'Legacy experimental test'
+type: theme
+description: 'Legacy experimental test theme.'
+# version: VERSION
+base theme: false
+experimental: true
+
+# Information added by Drupal.org packaging script on 2023-01-18
+version: '9.5.2'
+project: 'drupal'
+datestamp: 1674066183

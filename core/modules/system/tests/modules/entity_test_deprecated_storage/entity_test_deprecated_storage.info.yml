@@ -1,0 +1,12 @@
+name: 'Entity storage deprecation test module'
+type: module
+description: 'Provides an entity storage class for testing deprecated methods.'
+package: Testing
+# version: VERSION
+dependencies:
+  - drupal:system
+
+# Information added by Drupal.org packaging script on 2023-01-18
+version: '9.5.2'
+project: 'drupal'
+datestamp: 1674066183

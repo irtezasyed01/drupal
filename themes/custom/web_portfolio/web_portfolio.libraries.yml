@@ -1,0 +1,14 @@
+global-styling:
+  css:
+    theme:
+      assets/vendors/themify-icons/css/themify-icons.css: {}
+      assets/css/johndoe.css: {}
+      
+  js:
+    assets/vendors/jquery/jquery-3.4.1.js: {}
+    assets/vendors/bootstrap/bootstrap.bundle.js: {}
+    assets/vendors/bootstrap/bootstrap.affix.js: {}
+    assets/vendors/isotope/isotope.pkgd.js: {}
+    assets/js/johndoe.js: {}
+    https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap: {}
+

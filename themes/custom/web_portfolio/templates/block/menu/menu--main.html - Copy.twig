@@ -1,0 +1,63 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a menu.
+ *
+ * Available variables:
+ * - classes: A list of classes to apply to the top level <ul> element.
+ * - dropdown_classes: A list of classes to apply to the dropdown <ul> element.
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *
+ * @ingroup templates
+ *
+ * Define a custom macro that will render all menu trees.
+ */
+#}
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+    <div class="container">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                {% set total_menus = items|length %}
+                {% set half = (total_menus/2)|round(0, 'ceil') %}
+                {% set count = 0 %}
+                {% for item in items %}
+                    {% if loop.index <= half %}
+                        <li class="nav-item">
+                            <a href="{{item.url}}" class="nav-link">{{ half }} - {{item.title|upper}}</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}     
+                
+            </ul>
+
+            <ul class="navbar-nav brand">
+                <img src="{{ directory }}/assets/imgs/avatar.jpg" alt="" class="brand-img">
+                <li class="brand-txt">
+                    <h5 class="brand-title">Irteza Syed</h5>
+                    <div class="brand-subtitle">Full Stack | Web Developer</div>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+
+                {% for item in items %}
+                    <li class="nav-item">
+                        <a href="{{item.url}}" class="nav-link">{{item.title|upper}}</a>
+                    </li>
+                {% endfor %}     
+                
+            </ul>
+        </div>
+    </div>
+</nav>

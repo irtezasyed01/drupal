@@ -1,0 +1,12 @@
+name: Deprecated module dependency
+type: module
+description: 'Module that depends on a deprecated module'
+package: Testing
+# version: VERSION
+dependencies:
+  - drupal:deprecated_module
+
+# Information added by Drupal.org packaging script on 2023-01-18
+version: '9.5.2'
+project: 'drupal'
+datestamp: 1674066183
